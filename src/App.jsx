@@ -1,14 +1,14 @@
-import './App.css';
-import Formgame from './components/Formgame';
-import Games from './components/Games';
-import Header from './components/Header';
+import { Route, Routes } from "react-router-dom";
+import "./App.css";
+import Games from "./components/Games";
+import Home from "./pages/Home";
 
 function App() {
   return (
-    <div className='App'>
-      <Header/>
-      <Formgame/>
-      <Games />
+    <div className="App">
+      <Routes>
+        <Route path="/" element={<Home/>}/>
+      </Routes>
     </div>
   );
 }
