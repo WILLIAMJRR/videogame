@@ -1,4 +1,3 @@
-import { Fragment, useEffect, useState } from "react";
 import gamecss from "../style/game.css";
 
 const Gamescard = ({ game }) => {
@@ -18,7 +17,7 @@ const Gamescard = ({ game }) => {
             <li key={id} className="card__platform__img">
               <img
                 className="img__platform"
-                src={`/src/assets/images/${id}.svg`}
+                src={`./src/assets/images/${id}.svg`}
                 alt={name}
               />
             </li>
@@ -36,7 +35,7 @@ const Gamescard = ({ game }) => {
                 <a href="#">
                   <img
                     className="img__store"
-                    src={`/src/assets/images/${slug}.svg`}
+                    src={`./src/assets/images/${slug}.svg`}
                     alt=""
                   />
                 </a>
